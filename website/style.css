@@ -1,0 +1,71 @@
+body{
+	height:6000px;
+}
+
+header{
+	width: 100%;
+}
+
+h2{
+	color: white;
+	font-size: 60px;
+	text-align: center;
+}
+
+#background {
+	position: fixed;
+	width: 150vw;
+	height: 150vw;
+    top: -25vw;
+    left: -25vw;
+	z-index: -1;
+	background-image:url(sterrenhemel.jpg);
+	background-size: 100%;
+}
+
+#star{
+	width: 150px;
+	height: 6px;
+	background: url(shootingstar.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+	top: 75vw;
+	left: -10vw;
+	z-index: 1;
+	-webkit-animation: shootingstar 20s infinite linear;
+	animation: shootingstar 20s infinite linear;
+}
+
+
+@-webkit-keyframes shootingstar {
+    0%   	{left:-10vw}
+    50% 	{left:-10vw}
+	52%		{left:200vw}
+	100%	{left:200vw}
+}
+
+@keyframes shootingstar {
+    0%   	{left:-10vw}
+    50% 	{left:-10vw}
+	52%		{left:200vw}
+	100%	{left:200vw}
+}
+
+
+/*
+
+
+	-webkit-animation: example 0.5s ;
+    animation example 0.5s;
+    transform: rotate(0deg);
+
+@-webkit-keyframes example {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+/*
+/* Standard syntax 
+@keyframes example {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}*/

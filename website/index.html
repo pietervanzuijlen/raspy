@@ -1,0 +1,36 @@
+<h3>Raspberry pi setting manual</h3>
+<!DOCTYPE html>
+<html>
+<script>
+
+function parallax(){
+	var background = document.getElementById('background');
+	background.style.transform = 'rotate('+(window.pageYOffset / 100 )+'deg)';
+}
+window.addEventListener("scroll", parallax, false);
+
+
+
+
+
+</script>
+
+<head>
+
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+<div id='header'>
+<h2>Pieter's Audiobox</h2>
+</div>
+
+<div id='background'>
+<div id='star'></div>
+</div>
+
+
+</body>
+</html>
